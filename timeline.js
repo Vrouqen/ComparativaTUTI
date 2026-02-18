@@ -1301,7 +1301,7 @@ function initTutiDashboard() {
     if (kpiSavings) {
         // Cálculo: Suma de ventas históricas Tuti * 1.5% (comisión promedio evitada)
         const totalVentas = FINANCIAL_DATA.TUTI.reduce((acc, curr) => acc + curr.ventas, 0);
-        const ahorro = totalVentas * 0.015; 
+        const ahorro = totalVentas * 0.02; 
         kpiSavings.innerHTML = `+$${ahorro.toFixed(1)}M`;
         kpiSavings.style.color = '#8b5cf6'; // Asegurar color violeta
     }
